@@ -7,10 +7,21 @@ header ul {
 a {
     text-decoration: none;
     color: wheat;
+    padding: 5px;
+    font-size: 20px;
+}
+a:hover {
+    color: rgb(240, 60, 183);
 }
 body {
     background-image: url(háttér.jpg!d);
     color: white;
+}
+footer {
+    margin: auto;
+}
+article ul li{
+    list-style-type: square;
 }
 aside img {
     max-width: 300px;
@@ -19,8 +30,46 @@ aside img {
 main {
     margin: auto;
     max-width: 800px;
-}
-.vmi {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+        "h h"
+        "n n"
+        "r a"
+        "f f";
+}
+aside tr th {
+    border: 1px solid pink;
+    padding: 5px;
+}
+aside {
+    grid-area: a;
+}
+article {
+    grid-area: r;
+}
+header {
+    grid-area: h;
+}
+footer {
+    grid-area: f;
+}
+nav {
+    grid-area: n;
+}
+@media screen and (max-width: 450px) {
+    body {
+        width: 100%;
+        font-size: 5vw;
+      }
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 50px auto auto 50px;
+        grid-template-areas: 
+        "h"
+        "n"
+        "r"
+        "a"
+        "f";
+    }
 }
