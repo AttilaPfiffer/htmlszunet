@@ -47,12 +47,15 @@ aside {
 }
 article {
     grid-area: r;
+    background-color: rgb(172, 49, 172);
+    padding: 2px;
 }
 header {
     grid-area: h;
 }
 footer {
     grid-area: f;
+    color: wheat;
 }
 nav {
     grid-area: n;
