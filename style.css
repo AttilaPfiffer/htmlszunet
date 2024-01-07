@@ -1,0 +1,22 @@
+header ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: 1px solid white;
+    color: white;
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-image: url(háttér.jpg!d);
+    display: grid;
+}
+aside img {
+    max-width: 300px;
+    max-height: 117px;
+}
+main {
+    margin: auto;
+    max-width: 800px;
+}
